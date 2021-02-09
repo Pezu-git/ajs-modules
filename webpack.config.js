@@ -4,14 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const Domain = require()
 
 module.exports = {
+  
         entry: './src/index.js',
         output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js',
         },
   
-    module: {
-        plugins: [new MiniCssExtractPlugin()],
+  module: {
     rules: [
       {
         test: /\.js$/,
